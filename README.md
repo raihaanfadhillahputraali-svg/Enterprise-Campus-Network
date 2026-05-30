@@ -15,4 +15,4 @@ The network is segmented using VLANs for different departments, uses multilayer 
 
 ## Network Topology
 
-[<img width="726" height="722" alt="image" src="https://github.com/user-attachments/assets/61d2b632-976e-4e3d-a92c-b9d93bc3b4fc" />]
+<img width="726" height="722" alt="image" src="https://github.com/user-attachments/assets/61d2b632-976e-4e3d-a92c-b9d93bc3b4fc" />
