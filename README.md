@@ -25,9 +25,8 @@ This project demonstrates the implementation of:
 
 ## Topology
 
-![Topology](topology/topology.png)
+<img width="625" height="730" alt="image" src="https://github.com/user-attachments/assets/324f6295-8e5c-48f7-b794-1f7a705d0765" />
 
-> Replace this image after exporting your topology from PNETLab or Draw.io.
 
 ---
 
@@ -115,14 +114,8 @@ show vlan brief
 
 ### Result
 
-![VLAN Verification](verification/vlan-brief.png)
+<img width="639" height="194" alt="image" src="https://github.com/user-attachments/assets/e551e2f5-de5e-4642-806a-ca404d45b65d" />
 
-**Screenshot Required**
-- VLAN 10
-- VLAN 20
-- VLAN 30
-- VLAN 40
-- Assigned Ports
 
 ---
 
@@ -136,11 +129,8 @@ show interfaces trunk
 
 ### Result
 
-![Trunk Verification](verification/trunk-status.png)
+<img width="566" height="228" alt="image" src="https://github.com/user-attachments/assets/44b87a2c-1c0e-4047-baab-2019f0e2a2fb" />
 
-**Screenshot Required**
-- SW1 ↔ MLS1 trunk
-- SW2 ↔ MLS1 trunk
 
 ---
 
@@ -154,12 +144,8 @@ show ip ospf neighbor
 
 ### Result
 
-![OSPF Neighbor](verification/ospf-neighbor.png)
+<img width="683" height="49" alt="image" src="https://github.com/user-attachments/assets/6b117718-1175-403a-a5d3-61b2ab9f20ed" />
 
-**Screenshot Required**
-- R1 Neighbor
-- R2 Neighbor
-- FULL State
 
 ---
 
@@ -173,12 +159,8 @@ show ip route
 
 ### Result
 
-![Routing Table](verification/routing-table.png)
+<img width="597" height="150" alt="image" src="https://github.com/user-attachments/assets/d6193e43-3380-459c-8748-59fb31fa7d77" />
 
-**Screenshot Required**
-- OSPF Routes
-- Connected Routes
-- VLAN Networks
 
 ---
 
@@ -194,10 +176,8 @@ PC1 -> PC4
 
 ### Result
 
-![Ping Tests](verification/ping-tests.png)
+<img width="477" height="349" alt="image" src="https://github.com/user-attachments/assets/a2610e44-8dd6-4ef8-9157-b694a6aecff9" />
 
-**Screenshot Required**
-- Successful ping between departments
 
 ---
 
@@ -215,6 +195,7 @@ HR -> Finance
 IT -> HR
 ```
 
+
 ### Denied
 
 ```text
@@ -223,11 +204,12 @@ Guest -> Finance
 
 ### Result
 
-![ACL Verification](verification/acl-test.png)
+<img width="482" height="111" alt="image" src="https://github.com/user-attachments/assets/103471e1-6001-4bad-9ccf-ec65e7ff3497" />
+<img width="488" height="109" alt="image" src="https://github.com/user-attachments/assets/974ebd44-d1ab-4adb-a8cb-72add7488010" />
+<img width="480" height="113" alt="image" src="https://github.com/user-attachments/assets/154a7901-14b5-41e5-b03e-6f62fa6ba5ee" />
+<img width="906" height="114" alt="image" src="https://github.com/user-attachments/assets/ecee7503-de73-4b2c-89fc-5fe5dc97fa65" />
 
-**Screenshot Required**
-- Successful ping from IT to Finance
-- Failed ping from Guest to Finance
+
 
 ---
 
