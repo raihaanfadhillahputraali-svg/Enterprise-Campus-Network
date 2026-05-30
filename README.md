@@ -209,50 +209,54 @@ Guest -> Finance
 <img width="480" height="113" alt="image" src="https://github.com/user-attachments/assets/154a7901-14b5-41e5-b03e-6f62fa6ba5ee" />
 <img width="906" height="114" alt="image" src="https://github.com/user-attachments/assets/ecee7503-de73-4b2c-89fc-5fe5dc97fa65" />
 
-
-
 ---
 
-# Troubleshooting
+## Troubleshooting
 
-## Issue 1 - Trunk Not Forming
+### Issue 1 - Unable to Configure Trunk Port
 
-### Problem
+#### Problem
 
-Traffic between VLANs was not crossing switches.
+While configuring trunk links between switches, the command:
 
-### Solution
+```bash
+switchport mode trunk
+```
 
-Verified trunk interfaces using:
+returned an error and the interface would not enter trunk mode.
+
+#### Investigation
+
+Verified interface switchport settings and reviewed available trunk configuration options.
+
+#### Root Cause
+
+The switch was using trunk encapsulation mode `auto`, which prevented trunk mode from being enabled directly.
+
+#### Resolution
+
+Configured the trunk encapsulation type first:
+
+```bash
+switchport trunk encapsulation dot1q
+switchport mode trunk
+```
+
+After applying the encapsulation, the interface successfully entered trunk mode.
+
+#### Verification
 
 ```bash
 show interfaces trunk
 ```
 
-Corrected switchport configuration.
+Confirmed that the interface was operating as an 802.1Q trunk and carrying VLAN traffic correctly.
 
----
+#### Evidence
 
-## Issue 2 - OSPF Neighbor Down
-
-### Problem
-
-OSPF adjacency did not form.
-
-### Solution
-
-Verified:
-
-```bash
-show ip ospf neighbor
-```
-
-Checked:
-- Interface status
-- Network statements
-- IP addressing
-
----
+<img width="852" height="31" alt="image" src="https://github.com/user-attachments/assets/fe3aaca3-42f9-4693-b12e-5a3afa84ead1" />
+<img width="330" height="30" alt="image" src="https://github.com/user-attachments/assets/8cbc1698-63ce-4a6e-8fc5-e9087c44ad31" />
+<img width="562" height="195" alt="image" src="https://github.com/user-attachments/assets/5d69f6c4-e2e4-418c-8d06-b8f2693974fa" />
 
 # Lessons Learned
 
